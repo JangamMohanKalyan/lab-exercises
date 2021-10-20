@@ -1,0 +1,49 @@
+package arrays;
+
+public class SortArray 
+{
+public static void main(String[] args) {
+	
+
+	int a[]=new int[] {10,5,25,30,45,60};
+	
+	int temp=0;
+	//logic for the sorting the array in descending order
+	for (int i=0;i<a.length;i++)
+	{
+		for (int j=i+1;j<a.length;j++)
+		{
+			if(a[i]<a[j])
+			{
+				temp=a[i];
+				a[i]=a[j];
+				a[j]=temp;
+			}
+				
+		}
+	}
+	System.out.println("Elements of array sorted in descending");
+	for (int i=0; i<a.length;i++)
+	{
+		System.out.println(a[i]+"  ");// printing the array in descending order
+	}
+	//logic for the sort the array in ascending order
+    for (int i = 0; i < a.length; i++) {     
+        for (int j = i+1; j < a.length; j++) {     
+           if(a[i] > a[j]) {    
+               temp = a[i];    
+               a[i] = a[j];    
+               a[j] = temp;    
+           }     
+        }     
+    }
+    System.out.println("Elements of array sorted in Ascensing");
+	for (int i=0; i<a.length;i++)
+	{
+		System.out.println(a[i]+"  ");// printing the array in the ascending order
+      
+	
+}
+}
+}
+
